@@ -1,5 +1,24 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
+/* START Change Language Picker Globe to Inclusive SVG */
+<style>
+.fa-globe:before {
+    content: unset;
+}
+#header .language-pack-wrapper .fa-globe {
+    margin-left: 0px;
+}
+#globe-svg {
+    height: 30px;
+    filter: invert(51%) sepia(30%) saturate(5846%) hue-rotate(359deg) brightness(101%) contrast(105%);
+}
+
+#header .language-pack-wrapper {
+    padding: 17px;
+}
+</style>
+
 <style>
 /*eloqua and google tracking scripts are at the bottom in this pane*/
 
