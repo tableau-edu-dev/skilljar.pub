@@ -1,0 +1,535 @@
+/*icons style*/
+.brush:after {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 44px;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  content: 'brush';
+  display:block;
+  margin-top:-15px;
+}
+
+.compass:after {
+  font-family: 'Material Icons';
+  font-size:44px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  content: 'explore';
+  display:block;
+  margin-top:-15px;
+}
+
+.list-view a.course.sj-course-series[data-tags*='explorer']::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  /* Preferred icon size */
+  display: block;
+  top: 125px;
+  z-index: 99;
+  left: 5px;
+  margin-right: 5px;
+
+  position: absolute;
+  opacity: .8;
+  color: #777;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  content: 'explore brush';
+  text-shadow:
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;
+}
+
+.list-view a.course.sj-course-series[data-tags*='creator']::before,
+.list-view a.course[data-tags*='creator']::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  /* Preferred icon size */
+  display: block;
+  position: absolute;
+  top: 125px;
+  z-index: 99;
+  left: 5px;
+  margin-right: 5px;
+  color: #777;
+  opacity: .8;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  content: 'brush';
+  text-shadow:
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;
+}
+
+.list-view a.course[data-tags*='course']::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  /* Preferred icon size */
+  display: block;
+  position: absolute;
+  top: 110px;
+  z-index: 99;
+  left: 10px;
+  margin-right: 5px;
+  margin-left:3px;
+  opacity: .8;
+  color: #777;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  content: 'brush';
+  text-shadow:
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;
+}
+
+.list-view a.course,
+.search #catalog-content a.coursebox-container {
+  max-width: 30%;
+  min-width: 390px;
+}
+
+.contain {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+
+.hero_tabs {
+  background-image: url(https://cdns.tblsft.com/sites/default/files/hero-backgrounds/hero-teams-orgs-tall.png);
+  padding-bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero {
+  height: 100%;
+  padding: 1em;
+  color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  font-family: "Benton Sans Book", Helvetica, sans-serif;
+  font-size: 80px;
+}
+
+.notice {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  line-height: unset;
+  font-size: 2em;
+}
+
+.coursebox-image:before {
+  content: 'MORE';
+  font-family: 'Benton Sans Book';
+  color: #ff6d02;
+  position: fixed;
+  right: 15px;
+  bottom: 0;
+  display: inherit;
+  height: 20px;
+  width: 40px;
+  letter-spacing: .1em;
+  font-size: 10px;
+  padding-top: 6px;
+  background: #fff;
+}
+
+.coursebox-image:after {
+  content: '\2192' !important;
+  font-family: 'Benton Sans Book';
+  color: #ff6d02;
+  position: fixed !important;
+  right: 5px;
+  bottom: 0;
+  top: unset !important;
+  left: unset !important;
+  opacity: unset;
+  display: inherit;
+  height: 20px !important;
+  width: 10px !important;
+  letter-spacing: .1em;
+  font-size: 10px;
+  padding-top: 6px;
+  background: #fff;
+}
+
+/*sticks the nav to the top on scroll */
+.sticky {
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.sticky + #catalog-content {
+  padding-top: 60px;
+}
+
+.split-label {
+  position:relative;
+  margin-top:1em;
+  margin-bottom:1em;
+  display:flex;
+  justify-content: space-around;
+  flex-direction:row;
+}
+
+.split-label__left {
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width:500px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.split-label__right {
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width:500px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.split-label__center {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:#fff;
+}
+
+#tothetop {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#tothetop:hover {
+  cursor: pointer;
+}
+
+#tothetop:active {
+  background-color: #555;
+}
+
+#tothetop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #777;
+}
+
+#tothetop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+body {
+  margin: 0;
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.hero-image {
+  background-image: url('https://www.tableau.com/sites/default/files/hero-backgrounds/te_banner_10.png');
+  background-position: left bottom;
+  background-color: #467387;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* https://cdns.tblsft.com/sites/default/files/hero-backgrounds/hero-teams-orgs-tall.png */
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.button-position {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero_tabs {
+  padding-top:10px;
+  padding-bottom: 10px;
+  background-color:#F5F5F5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.three-up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: unset;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.column {
+  float: left;
+  min-width: 390px;
+  max-width: 30%;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Benton Sans Bold', 'Helvetica', 'Arial', 'sans-serif' !important;
+  padding:12px;
+  margin: 3px;
+  background-color:#fff;
+  max-height: 128px;
+  min-height:128px;
+  border:1px solid #000;
+  overflow:hidden;
+  color:#fff;
+  webkit-transition: all 0.1s ease-in-out, width 0.01ms, height 0.01ms;
+  transition: all 0.1s ease-in-out, width 0.01ms, height 0.01ms;
+  transition-property: all, width, height;
+  transition-duration: 0.1s, 0.01ms, 0.01ms;
+  transition-timing-function: ease-in-out, ease, ease;
+  transition-delay: 0s, 0s, 0s;
+}
+
+.CTAMessage {
+  font-family: 'Benton Sans Book';
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  display: inherit;
+  height: 20px;
+  letter-spacing: .1em;
+  font-size: 10px;
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+.CTAMessage:after {
+  content: ' \2192' !important;
+  margin-left:5px;
+}
+
+.banner:hover {
+  content:"";
+  border: 1px #777 solid;
+  background-color:transparent;
+  -webkit-box-shadow: 0 110px 10px #666;
+  -moz-box-shadow: 0 10px 10px #666;
+  box-shadow: 0 10px 10px #666;
+  -webkit-filter: unset;
+  filter: unset;
+  text-decoration: none;
+}
+
+.overlay-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.banner:hover .overlay-effect {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.callToAction {
+  position: absolute;
+  top: 12px;
+  left: 11px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 12px;
+  vertical-align: top;
+}
+
+.CTAlightbluebubble {
+  background-color: #7FC1D1;
+  background-image: url(https://www.tableau.com/sites/default/files/hero-backgrounds/registration-headers_c_4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CTAILT {
+  background-color: #F78F28;
+  background-image: url(https://www.tableau.com/sites/default/files/hero-backgrounds/classroom-bg_0.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CTAblue {
+  background-color: #F78F28;
+  background-image: url(https://www.tableau.com/sites/default/files/2021-05/skilljar-banner-12_0.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CTAfunbubbles {
+  background-color: #F78F28;
+  background-image: url(https://www.tableau.com/sites/default/files/hero-backgrounds/ps_day_banner_16.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CTAorange {
+  background-color: #F78F28;
+  background-image: url(https://cdnl.tblsft.com/sites/default/files/hero-backgrounds/elearning-hero-1366x455-1a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CTAlightblue {
+  background-color: #7FC1D1;
+  /*background-image: url(https://cdnl.tblsft.com/sites/default/files/paragraphs/backgrounds/header-background_2880x1080.png);*/
+  background-image: url(https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fv_mstenerson_tableau_com_c4xlt5%2Fpublic%2F1606759025%2Femailbanner-turquoise-gantt.1606759025297.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CTAdarkblue {
+  background-color: #0F1E3C;
+  background-image: url(https://cdns.tblsft.com/sites/default/files/hero-backgrounds/why-1-1366x455_-_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CTAorangebubblesdarkblue {
+  background-color: #0F1E3C;
+  background-image: url(https://www.tableau.com/sites/default/files/2021-06/skilljar-banner-09.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
