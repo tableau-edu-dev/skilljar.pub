@@ -9,10 +9,11 @@ function scrollThere(targetElement) {
 
 function addCSS(linkList) {
   var head = document.getElementsByTagName('HEAD')[0];
-
+  console.log(head);
   var linkCount = linkList.length;
   for (var i = 0; i < linkCount; i++) {
     var obj = createCSSObject(linkList[i]);
+    console.log(obj);
     head.appendChild(obj);
   }
 }
