@@ -9,7 +9,7 @@ function scrollThere(targetElement) {
 
 // Get HTML head element
 var head = document.getElementsByTagName('HEAD')[0];
-
+console.log(head);
 // Create new link Element
 var link = document.createElement('link');
 
@@ -19,7 +19,7 @@ link.rel = 'stylesheet';
 link.type = 'text/css';
 
 link.href = 'https://tableau-edu-dev.github.io/skilljar.pub/src/pages/catalog/catalog.css';
-
+console.log(link);
 // Append link element to HTML head
 head.appendChild(link);
 
