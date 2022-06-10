@@ -9,20 +9,19 @@ function scrollThere(targetElement) {
 
 function addCSS(linkList) {
   var head = document.getElementsByTagName('HEAD')[0];
-  console.log(head);
   var linkCount = linkList.length;
   for (var i = 0; i < linkCount; i++) {
     var obj = createCSSObject(linkList[i]);
-    console.log(obj);
     head.appendChild(obj);
   }
 }
 
-function createCSSObject(link) {
+function createCSSObject(url) {
   var link = document.createElement('link');
   link.rel = 'stylesheet';
   link.type = 'text/css';
-  link.href = link;
+  link.href = url;
+  return link;
 }
 
 var cssLinks = ['https://tableau-edu-dev.github.io/skilljar.pub/src/pages/catalog/catalog.css'];
