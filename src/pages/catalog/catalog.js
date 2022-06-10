@@ -7,21 +7,25 @@ function scrollThere(targetElement) {
     }, 1000, 'swing');
 }
 
-// Get HTML head element
-var head = document.getElementsByTagName('HEAD')[0];
-console.log(head);
-// Create new link Element
-var link = document.createElement('link');
+function addCSS(linkList) {
+  var head = document.getElementsByTagName('HEAD')[0];
 
-// set the attributes for link element
-link.rel = 'stylesheet';
+  var linkCount = linkList.length;
+  for (var i = 0; i < linkCount; i++) {
+    var obj = createCSSObject(linkList[i]);
+    head.appendChild(obj);
+  }
+}
 
-link.type = 'text/css';
+function createCSSObject(link) {
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = link;
+}
 
-link.href = 'https://tableau-edu-dev.github.io/skilljar.pub/src/pages/catalog/catalog.css';
-console.log(link);
-// Append link element to HTML head
-head.appendChild(link);
+var cssLinks = ['https://tableau-edu-dev.github.io/skilljar.pub/src/pages/catalog/catalog.css'];
+addCSS(cssLinks);
 
 $(document).ready(function() {
         if (document.documentElement.lang == 'en-US') {
