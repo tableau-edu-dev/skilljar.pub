@@ -177,7 +177,7 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-}*/
+}
 
 .hero {
   height: 100%;
@@ -186,7 +186,7 @@
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-}
+}*/
 
 .price {
   font-family: "Benton Sans Book", Helvetica, sans-serif;
