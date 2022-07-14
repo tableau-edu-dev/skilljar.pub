@@ -421,4 +421,7 @@
         $('#lp-footer').append('<div class="support-link-outer"><div class="support-link-inner">' + buildSupportLink(FooterData["Support"][curLang]) + '&nbsp | &nbsp<a href="' + Overview +'" target="_self" id="BTOverview" class="lesson-support-link">' + FooterData["Exit"][curLang]["label"] + '</a></div></div>');
       }
     /* END Footer Init */
+
+    //WisePop Survey Loader
+    (function(W,i,s,e,P,o,p){W['WisePopsObject']=P;W[P]=W[P]||function(){(W[P].q=W[P].q||[]).push(arguments)},W[P].l=1*new Date();o=i.createElement(s),p=i.getElementsByTagName(s)[0];o.defer=1;o.src=e;p.parentNode.insertBefore(o,p)})(window,document,'script','//loader.wisepops.com/get-loader.js?v=1&site=7XkKdLEzqT','wisepops');
   });
