@@ -373,6 +373,16 @@
           "de-DE": {"label": "Tableau Community-Foren", "path": "https://community.tableau.com/"},
           "fr-FR": {"label": "Forums de la Communauté Tableau", "path": "https://community.tableau.com/"}
         },
+        "Cookies" : {
+          "default": {"label": "Cookie Preferences"},
+          "en-US": {"label": "Cookie Preferences"},
+          "ja-JP": {"label": "Cookieの環境設定"},
+          "es-ES": {"label": "Preferencias de cookies"},
+          "zh-CN": {"label": "Cookie 偏好设置"},
+          "ko-KR": {"label": "쿠키 환경 설정"},
+          "de-DE": {"label": "Cookie-Einstellungen"},
+          "fr-FR": {"label": "Préférences en matière de cookies"}
+        },
         "Privacy" : {
           "default": {"label": "Your Privacy Choices", "path": "https://www.salesforce.com/form/other/privacy-request/"},
           "en-US": {"label": "Your Privacy Choices", "path": "https://www.salesforce.com/form/other/privacy-request/"},
@@ -458,7 +468,8 @@
 
       if ($('#footer-left').length)
       {
-        $('#footer-left').html('<ul><li>© '+ y +' </li><li><a href="' + FooterData["EULA"][curLang]["path"] + '" target="_blank">' + FooterData["EULA"][curLang]["label"] + '</a></li><li><a href="' + FooterData["FAQ"][curLang]["path"] + '" target="_blank">' + FooterData["FAQ"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Forums"][curLang]["path"] + '" target="_blank">' + FooterData["Forums"][curLang]["label"] + '</a></li><li>' + buildSupportLink(FooterData["Support"][curLang]) + '</li><li><a href="' + FooterData["Privacy"][curLang]["path"] + '" target="_blank"><img style="width: 30px; height: 15px;" src="//www.salesforce.com/content/dam/web/global/svg-icons/icon-cpra.svg"> ' + FooterData["Privacy"][curLang]["label"] + '</a></li></ul>');
+        $('#footer-left').html('<ul><li>© '+ y +' </li><li><a href="' + FooterData["EULA"][curLang]["path"] + '" target="_blank">' + FooterData["EULA"][curLang]["label"] + '</a></li>
+        <li><a href="' + FooterData["FAQ"][curLang]["path"] + '" target="_blank">' + FooterData["FAQ"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Forums"][curLang]["path"] + '" target="_blank">' + FooterData["Forums"][curLang]["label"] + '</a></li><li>' + buildSupportLink(FooterData["Support"][curLang]) + '</li><li><a href="#" data-ignore-geolocation="true" class="optanon-toggle-display">' + FooterData["Cookies"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Privacy"][curLang]["path"] + '" target="_blank"><img style="width: 30px; height: 15px;" src="//www.salesforce.com/content/dam/web/global/svg-icons/icon-cpra.svg"> ' + FooterData["Privacy"][curLang]["label"] + '</a></li></ul>');
       }
       else if ($('#lp-footer').length)
       {
