@@ -375,7 +375,7 @@
         },
         "Privacy" : {
           "default": {"label": "Your Privacy Choices", "path": "https://www.salesforce.com/form/other/privacy-request/"},
-          "en-US": {"label": "Your Privacy Choices", "path": "hhttps://www.salesforce.com/form/other/privacy-request/"},
+          "en-US": {"label": "Your Privacy Choices", "path": "https://www.salesforce.com/form/other/privacy-request/"},
           "ja-JP": {"label": "お客様によるプライバシー設定の選択肢", "path": "https://www.salesforce.com/form/other/privacy-request/"},
           "es-ES": {"label": "Sus opciones de privacidad", "path": "https://www.salesforce.com/form/other/privacy-request/"},
           "zh-CN": {"label": "您的隐私选择", "path": "https://www.salesforce.com/form/other/privacy-request/"},
