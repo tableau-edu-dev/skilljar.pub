@@ -1,11 +1,13 @@
 /* START Change Language Picker Globe to Inclusive SVG */
 <style>
 .fa-globe:before {
-    content: unset;
+    content:unset;
 }
+
 #header .language-pack-wrapper .fa-globe {
     margin-left: 0px;
 }
+
 #globe-svg {
     height: 30px;
     filter: invert(51%) sepia(30%) saturate(5846%) hue-rotate(359deg) brightness(101%) contrast(105%);
