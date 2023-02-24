@@ -132,7 +132,7 @@
     /* END Samples Specific Code */
 
     //Swap in new globe
-    $('.fa-globe').css('content', '');
+    $("<style> .fa-globe:before {content:unset;} </style>").appendTo("head");
     $('.fa-globe').html('<img id="globe-svg" src="https://style.tableau.com/sites/default/files/2021-03/globe.svg">');
 
     /* START Google Tag Manager */
