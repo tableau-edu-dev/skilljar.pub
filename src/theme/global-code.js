@@ -373,6 +373,16 @@
           "de-DE": {"label": "Tableau Community-Foren", "path": "https://community.tableau.com/"},
           "fr-FR": {"label": "Forums de la Communauté Tableau", "path": "https://community.tableau.com/"}
         },
+        "Privacy" : {
+          "default": {"label": "Your Privacy Choices", "path": "https://www.salesforce.com/form/other/privacy-request/"},
+          "en-US": {"label": "Your Privacy Choices", "path": "hhttps://www.salesforce.com/form/other/privacy-request/"},
+          "ja-JP": {"label": "お客様によるプライバシー設定の選択肢", "path": "https://www.salesforce.com/form/other/privacy-request/"},
+          "es-ES": {"label": "Sus opciones de privacidad", "path": "https://www.salesforce.com/form/other/privacy-request/"},
+          "zh-CN": {"label": "您的隐私选择", "path": "https://www.salesforce.com/form/other/privacy-request/"},
+          "ko-KR": {"label": "귀하의 개인정보 보호 선택", "path": "https://www.salesforce.com/form/other/privacy-request/"},
+          "de-DE": {"label": "Ihre Datenschutzauswahlen", "path": "https://www.salesforce.com/form/other/privacy-request/"},
+          "fr-FR": {"label": "Vos Choix en Matière de Confidentialité", "path": "https://www.salesforce.com/form/other/privacy-request/"}
+        },
         "Support" : {
           "default": {
             "label": "Support",
@@ -448,7 +458,7 @@
 
       if ($('#footer-left').length)
       {
-        $('#footer-left').html('<ul><li>© '+ y +' </li><li><a href="' + FooterData["EULA"][curLang]["path"] + '" target="_blank">' + FooterData["EULA"][curLang]["label"] + '</a></li><li><a href="' + FooterData["FAQ"][curLang]["path"] + '" target="_blank">' + FooterData["FAQ"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Forums"][curLang]["path"] + '" target="_blank">' + FooterData["Forums"][curLang]["label"] + '</a></li><li>' + buildSupportLink(FooterData["Support"][curLang]) + '</li></ul>');
+        $('#footer-left').html('<ul><li>© '+ y +' </li><li><a href="' + FooterData["EULA"][curLang]["path"] + '" target="_blank">' + FooterData["EULA"][curLang]["label"] + '</a></li><li><a href="' + FooterData["FAQ"][curLang]["path"] + '" target="_blank">' + FooterData["FAQ"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Forums"][curLang]["path"] + '" target="_blank">' + FooterData["Forums"][curLang]["label"] + '</a></li><li>' + buildSupportLink(FooterData["Support"][curLang]) + '</li><li><a href="' + FooterData["Privacy"][curLang]["path"] + '" target="_blank">' + FooterData["Privacy"][curLang]["label"] + '</a></li></ul>');
       }
       else if ($('#lp-footer').length)
       {
