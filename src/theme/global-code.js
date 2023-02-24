@@ -1,15 +1,16 @@
+  var isSamples = (window.location.hostname == "elearning-samples.tableau.com");
 
   var curLang = "default";
 
   var LangMapToSJLang = {
-    "en-US": {"sj_id": "1bzdyi075jus", "path": "/"},
-    "ja-JP": {"sj_id": "3gl30vyogvnmu", "path": "/page/ja"},
-    "default": {"sj_id": "1bzdyi075jus", "path": "/"},
-    "es-ES": {"sj_id": "38ih51ma7efg9", "path": "/page/es"},
-    "zh-CN": {"sj_id": "2o6kwj7e3az2f", "path": "/page/zh"},
-    "ko-KR": {"sj_id": "3jpgmwcua6fbf", "path": "/page/ko"},
-    "de-DE": {"sj_id": "xjnyp0weakhy", "path": "/page/de"},
-    "fr-FR": {"sj_id": "1gxn7bum6r96j", "path": "/page/fr"}
+    "en-US": {"sj_id": "1bzdyi075jus", "path": "/", "wisepopLang": "en-US"},
+    "ja-JP": {"sj_id": "3gl30vyogvnmu", "path": "/page/ja", "wisepopLang": "ja"},
+    "default": {"sj_id": "1bzdyi075jus", "path": "/", "wisepopLang": "en-US"},
+    "es-ES": {"sj_id": "38ih51ma7efg9", "path": "/page/es", "wisepopLang": "es-MX"},
+    "zh-CN": {"sj_id": "2o6kwj7e3az2f", "path": "/page/zh", "wisepopLang": "zh-Hans"},
+    "ko-KR": {"sj_id": "3jpgmwcua6fbf", "path": "/page/ko", "wisepopLang": "en-US"},
+    "de-DE": {"sj_id": "xjnyp0weakhy", "path": "/page/de", "wisepopLang": "en-US"},
+    "fr-FR": {"sj_id": "1gxn7bum6r96j", "path": "/page/fr", "wisepopLang": "en-US"}
   }
 
   var SJLangToLangMap =
@@ -96,13 +97,21 @@
     });
   /* END Language Picker */
 
+  /* START WisePop Loader */
+    var siteKey = "jfAwR29161"; //Creator and Explorer key
+    if(isSamples)
+      siteKey = "7XkKdLEzqT";
+
+    (function(W,i,s,e,P,o,p){W['WisePopsObject']=P;W[P]=W[P]||function(){(W[P].q=W[P].q||[]).push(arguments)},W[P].l=1*new Date();o=i.createElement(s),p=i.getElementsByTagName(s)[0];o.defer=1;o.src=e;p.parentNode.insertBefore(o,p)})(window,document,'script','//loader.wisepops.com/get-loader.js?v=1&site='+siteKey,'wisepops');
+  /* END WisePop Loader */
+
   $(document).ready(function() {
     detectLanguage();
     var n =  new Date();
     var y = n.getFullYear();
 
     /* START Samples Specific Code (I think) */
-    if(window.location.hostname == "elearning-samples.tableau.com")
+    if(isSamples)
     {
       console.log("loading sample code");
       $('.purchase-button.disabled').attr('href', 'https://buy.tableau.com/en-us/elearning').prepend('Buy eLearning Subscription<i style="font-size:12px" class="fa">&nbsp;&nbsp;&#xf023;</i>');
@@ -121,6 +130,9 @@
       });
     }
     /* END Samples Specific Code */
+
+    //Swap in new globe
+    $('.fa-globe').html('<img id="globe-svg" src="https://style.tableau.com/sites/default/files/2021-03/globe.svg">');
 
     /* START Google Tag Manager */
     var dataLayer = [];
@@ -308,6 +320,8 @@
               return;
           }
       }
+
+      wisepops('properties', {languageSelect:getDataFromLang(curLang)["wisepopLang"]});
     /* END Language Check */
 
     /* START Footer Init */
@@ -426,6 +440,5 @@
       }
     /* END Footer Init */
 
-    //WisePop Survey Loader
-    (function(W,i,s,e,P,o,p){W['WisePopsObject']=P;W[P]=W[P]||function(){(W[P].q=W[P].q||[]).push(arguments)},W[P].l=1*new Date();o=i.createElement(s),p=i.getElementsByTagName(s)[0];o.defer=1;o.src=e;p.parentNode.insertBefore(o,p)})(window,document,'script','//loader.wisepops.com/get-loader.js?v=1&site=7XkKdLEzqT','wisepops');
+
   });
