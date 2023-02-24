@@ -1,5 +1,11 @@
   var isSamples = (window.location.hostname == "elearning-samples.tableau.com");
 
+  var redirectURLs = {
+    "https://elearning.tableau.com/series/web-author": "https://elearning.tableau.com/path/author-learning-path",
+    "https://elearning.tableau.com/series/author": "https://elearning.tableau.com/path/author-learning-path",
+    "https://explorer-elearning.tableau.com/series/web-author": "https://explorer-elearning.tableau.com/path/author-learning-path"
+  }
+
   var curLang = "default";
 
   var LangMapToSJLang = {
@@ -86,6 +92,15 @@
     return output;
   }
 
+  function checkRedirects()
+  {
+    var current = location.protocol + '//' + location.host + location.pathname;
+    if(current in redirectURLs)
+    {
+      window.location.replace(redirectURLs[current]);
+    }
+  }
+
   /* START Language Picker */
     //when the user changes the language in the language picker, do this..
     $(document.body).on('change', '#languagePackSelect', function() {
@@ -106,13 +121,14 @@
   /* END WisePop Loader */
 
   $(document).ready(function() {
+    checkRedirects();
     detectLanguage();
     var n =  new Date();
     var y = n.getFullYear();
 
-    /* START Samples Specific Code (I think) */
     if(isSamples)
     {
+      /* START Samples Specific Code (I think) */
       console.log("loading sample code");
       $('.purchase-button.disabled').attr('href', 'https://buy.tableau.com/en-us/elearning').prepend('Buy eLearning Subscription<i style="font-size:12px" class="fa">&nbsp;&nbsp;&#xf023;</i>');
       $('.sj-page-series').find('.sj-registration-closed').append('<i class="fa lockDown">&#xf023;</i>');
@@ -128,8 +144,8 @@
           'left':'115px',
           'text-shadow': '-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff'
       });
+      /* END Samples Specific Code */
     }
-    /* END Samples Specific Code */
 
     //Swap in new globe
     $("<style> .fa-globe:before {content:unset;} </style>").appendTo("head");
