@@ -1,8 +1,8 @@
 /* START Change Language Picker Globe to Inclusive SVG */
 <style>
-.fa-globe:before {
+/*.fa-globe:before {
     content:unset;
-}
+}*/
 
 #header .language-pack-wrapper .fa-globe {
     margin-left: 0px;
