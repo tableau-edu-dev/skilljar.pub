@@ -104,7 +104,7 @@
     /* START Samples Specific Code (I think) */
     if(window.location.hostname == "elearning-samples.tableau.com")
     {
-      Console.Log("loading sample code");
+      console.log("loading sample code");
       $('.purchase-button.disabled').attr('href', 'https://buy.tableau.com/en-us/elearning').prepend('Buy eLearning Subscription<i style="font-size:12px" class="fa">&nbsp;&nbsp;&#xf023;</i>');
       $('.sj-page-series').find('.sj-registration-closed').append('<i class="fa lockDown">&#xf023;</i>');
 
