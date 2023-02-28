@@ -1829,6 +1829,10 @@ input[type="text"]:focus {
 	background:unset;
 	border-color:unset;
 }
+
+#main-container #skilljar-content a.welcome.search-only {
+display: none !important
+}
 </style>
 
 <!-- Start Purchase Button Text Fix -->
