@@ -396,49 +396,49 @@
         "Support" : {
           "default": {
             "label": "Support",
-            "path": "globalservices@tableau.com",
+            "path": "https://trailhead.salesforce.com/help?support=home&category=Trailhead%20Academy&casereason=e-Learning",
             "subject": "eLearning Technical Support Case",
             "body": "Please fill in the following information to help us resolve the issue you are experiencing.\r\n\t * Your Name: \r\n\t* Your Tableau eLearning email address: \r\n\t* Browser Name: \r\n\t* URL\\Link: \r\n\t* Issue (Please describe the issue you are experiencing): \r\n"
           },
           "en-US": {
             "label": "Support",
-            "path": "globalservices@tableau.com",
+            "path": "https://trailhead.salesforce.com/help?support=home&category=Trailhead%20Academy&casereason=e-Learning",
             "subject": "eLearning Technical Support Case",
             "body": "Please fill in the following information to help us resolve the issue you are experiencing.\r\n\t* Your Name: \r\n\t* Your Tableau eLearning email address: \r\n\t* Browser Name: \r\n\t* URL\\Link: \r\n\t* Issue (Please describe the issue you are experiencing): \r\n"
           },
           "ja-JP": {
             "label": "サポート",
-            "path": "globalservices@tableau.com",
+            "path": "https://trailhead.salesforce.com/help?support=home&category=Trailhead%20Academy&casereason=e-Learning",
             "subject": "eLearning Technical Support Case",
             "body": "問題解決を迅速にサポートできるよう、以下の情報を入力してください。\r\n\t* 氏名: \r\n\t* Tableaueラーニングの電子メールアドレス: \r\n\t* ブラウザ名: \r\n\t* URL\\リンク: \r\n\t* 問題の説明 (現在体験している問題について説明してください): \r\n"
           },
           "es-ES": {
             "label": "Soporte",
-            "path": "globalservices@tableau.com",
+            "path": "https://trailhead.salesforce.com/help?support=home&category=Trailhead%20Academy&casereason=e-Learning",
             "subject": "eLearning Technical Support Case",
             "body": "Complete la siguiente información para ayudarnos a solucionar el problema que está experimentando.\r\n\t* Su nombre: \r\n\t* Dirección de correo electrónico de Tableau eLearning: \r\n\t* Nombre del navegador: \r\n\t* URL\\enlace: \r\n\t* Problema (Describa el problema que está experimentando): \r\n"
           },
           "zh-CN": {
             "label": "支持",
-            "path": "globalservices@tableau.com",
+            "path": "https://trailhead.salesforce.com/help?support=home&category=Trailhead%20Academy&casereason=e-Learning",
             "subject": "eLearning Technical Support Case",
             "body": "请输入以下信息，以助我们为您解决遇到的问题。\r\n\t* 您的姓名: \r\n\t* Tableau 在线学习电子邮件地址: \r\n\t* 浏览器名称: \r\n\t* URL\\链接: \r\n\t* 问题（请描述您遇到的问题): \r\n"
           },
           "ko-KR": {
             "label": "지원",
-            "path": "globalservices@tableau.com",
+            "path": "https://trailhead.salesforce.com/help?support=home&category=Trailhead%20Academy&casereason=e-Learning",
             "subject": "온라인 학습 기술 지원 사례",
             "body": "발생한 문제를 해결하는 데 도움이 되도록 다음 정보를 입력해 주십시오.\r\n\t* 이름: \r\n\t* Tableau 온라인 학습 이메일 주소: \r\n\t* 브라우저 이름: \r\n\t* URL\\링크: \r\n\t* 문제(발생한 문제를 설명해 주십시오): \r\n"
           },
           "de-DE": {
             "label": "Support",
-            "path": "globalservices@tableau.com",
+            "path": "https://trailhead.salesforce.com/help?support=home&category=Trailhead%20Academy&casereason=e-Learning",
             "subject": "eLearning Technischer Support-Fall",
             "body": "Bitte machen Sie folgende Angaben, damit wir Ihr Problem lösen können.\r\n\t* Ihr Name: \r\n\t* Ihre bei Tableau eLearning hinterlegte E-Mail-Adresse: \r\n\t* Browser-Name: \r\n\t* URL\\Link: \r\n\t* Problem (Bitte beschreiben Sie Ihr Problem.): \r\n"
           },
           "fr-FR": {
             "label": "Assistance",
-            "path": "globalservices@tableau.com",
+            "path": "https://trailhead.salesforce.com/help?support=home&category=Trailhead%20Academy&casereason=e-Learning",
             "subject": "Demande d’assistance technique eLearning",
             "body": "Veuillez indiquer les informations suivantes afin de nous aider à résoudre votre problème.\r\n\t* Nom: \r\n\t* E-mail eLearning Tableau: \r\n\t* Navigateur utilisé: \r\n\t* URL\\Lien: \r\n\t* Problème (veuillez décrire le problème que vous rencontrez): \r\n"
           }
@@ -468,7 +468,7 @@
 
       if ($('#footer-left').length)
       {
-        $('#footer-left').html('<ul><li>© '+ y +' </li><li><a href="' + FooterData["EULA"][curLang]["path"] + '" target="_blank">' + FooterData["EULA"][curLang]["label"] + '</a></li><li><a href="' + FooterData["FAQ"][curLang]["path"] + '" target="_blank">' + FooterData["FAQ"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Forums"][curLang]["path"] + '" target="_blank">' + FooterData["Forums"][curLang]["label"] + '</a></li><li>' + buildSupportLink(FooterData["Support"][curLang]) + '</li><li><a href="' + FooterData["Privacy"][curLang]["path"] + '" target="_blank"><img style="width: 30px; height: 15px;" src="//www.salesforce.com/content/dam/web/global/svg-icons/icon-cpra.svg"> ' + FooterData["Privacy"][curLang]["label"] + '</a></li></ul>');
+        $('#footer-left').html('<ul><li>© '+ y +' </li><li><a href="' + FooterData["EULA"][curLang]["path"] + '" target="_blank">' + FooterData["EULA"][curLang]["label"] + '</a></li><li><a href="' + FooterData["FAQ"][curLang]["path"] + '" target="_blank">' + FooterData["FAQ"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Forums"][curLang]["path"] + '" target="_blank">' + FooterData["Forums"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Support"][curLang]["path"] + '" target="_blank">' + FooterData["Support"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Privacy"][curLang]["path"] + '" target="_blank"><img style="width: 30px; height: 15px;" src="//www.salesforce.com/content/dam/web/global/svg-icons/icon-cpra.svg"> ' + FooterData["Privacy"][curLang]["label"] + '</a></li></ul>');
 
         /* future footer that contains OneTrust link */
         //$('#footer-left').html('<ul><li>© '+ y +' </li><li><a href="' + FooterData["EULA"][curLang]["path"] + '" target="_blank">' + FooterData["EULA"][curLang]["label"] + '</a></li><li><a href="' + FooterData["FAQ"][curLang]["path"] + '" target="_blank">' + FooterData["FAQ"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Forums"][curLang]["path"] + '" target="_blank">' + FooterData["Forums"][curLang]["label"] + '</a></li><li>' + buildSupportLink(FooterData["Support"][curLang]) + '</li><li><a href="#" data-ignore-geolocation="true" class="optanon-toggle-display">' + FooterData["Cookies"][curLang]["label"] + '</a></li><li><a href="' + FooterData["Privacy"][curLang]["path"] + '" target="_blank"><img style="width: 30px; height: 15px;" src="//www.salesforce.com/content/dam/web/global/svg-icons/icon-cpra.svg"> ' + FooterData["Privacy"][curLang]["label"] + '</a></li></ul>');
@@ -476,7 +476,7 @@
       else if ($('#lp-footer').length)
       {
         // Lesson page
-        $('#lp-footer').append('<div class="support-link-outer"><div class="support-link-inner">' + buildSupportLink(FooterData["Support"][curLang]) + '&nbsp | &nbsp<a href="' + Overview +'" target="_self" id="BTOverview" class="lesson-support-link">' + FooterData["Exit"][curLang]["label"] + '</a></div></div>');
+        $('#lp-footer').append('<div class="support-link-outer"><div class="support-link-inner"><a href="' + FooterData["Support"][curLang]["path"] + '" target="_blank">' + FooterData["Support"][curLang]["label"] + '</a>&nbsp | &nbsp<a href="' + Overview +'" target="_self" id="BTOverview" class="lesson-support-link">' + FooterData["Exit"][curLang]["label"] + '</a></div></div>');
       }
     /* END Footer Init */
 
