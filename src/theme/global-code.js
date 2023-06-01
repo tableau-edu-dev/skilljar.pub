@@ -1,4 +1,5 @@
   var isSamples = (window.location.hostname == "elearning-samples.tableau.com");
+  var isExplorer = (window.location.hostname == "explorer-elearning.tableau.com");
 
   var redirectURLs = {
     "https://elearning.tableau.com/series/web-author": "https://elearning.tableau.com/path/author-learning-path",
@@ -81,6 +82,7 @@
     curLang = getLangFromSJLang($.cookie('sj_lp'));
   }
 
+  /* May no longer need this function due to change in support case logging */
   function buildSupportLink(data)
   {
     var output = "<a href=\"mailto:";
@@ -103,13 +105,16 @@
 
   /* START Language Picker */
     //when the user changes the language in the language picker, do this..
-    $(document.body).on('change', '#languagePackSelect', function() {
-        $('#languagePackSelect').attr('disabled', 'disabled');
-        if ($('.sj-page-catalog').length || $('.sj-page-other').length) //only redirects if they are on a Page
-        {
-          window.location.replace(getPickerPath());
-        }
-    });
+    if (!isExplorer)
+    {
+      $(document.body).on('change', '#languagePackSelect', function() {
+          $('#languagePackSelect').attr('disabled', 'disabled');
+          if ($('.sj-page-catalog').length || $('.sj-page-other').length) //only redirects if they are on a Page
+          {
+            window.location.replace(getPickerPath());
+          }
+      });
+    }
   /* END Language Picker */
 
   /* START WisePop Loader */
@@ -272,19 +277,26 @@
     /* END Hide Purchase Buttons */
 
     /* START Language Picker Init */
+
       var picker = $('.language-pack-wrapper');
       picker.detach();
-      $('#header-right').prepend(picker);
-      picker.css('display', 'none');
 
-      $(".sj-course-series").addClass('welcome');
-      $(".course[data-tags*='english']:visible").addClass('welcome');
-      $(".course[data-tags*='jian-ti-zhong-wen']").addClass('nihao');
-      $(".course[data-tags*='ri-ben-yu']").addClass('konnichiwa');
-      $(".course[data-tags*='espanol']").addClass('hola');
+      if(!isExplorer)
+      {
+        $('#header-right').prepend(picker);
+        picker.css('display', 'none');
+
+        $(".sj-course-series").addClass('welcome');
+        $(".course[data-tags*='english']:visible").addClass('welcome');
+        $(".course[data-tags*='jian-ti-zhong-wen']").addClass('nihao');
+        $(".course[data-tags*='ri-ben-yu']").addClass('konnichiwa');
+        $(".course[data-tags*='espanol']").addClass('hola');
+      }
     /* END Language Picker Init */
 
     /* START Language Check */
+    if(!isExplorer)
+    {
       if ($('.sj-page-catalog').length || $('.sj-page-other').length) //if we are on ANY Page, catalog or custom
       {
           //Only run this the first time the user hits the page from signing in
@@ -339,6 +351,7 @@
       }
 
       wisepops('properties', {languageSelect:getDataFromLang(curLang)["wisepopLang"]});
+    }
     /* END Language Check */
 
     /* START Footer Init */
