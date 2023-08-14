@@ -82,6 +82,32 @@
     curLang = getLangFromSJLang($.cookie('sj_lp'));
   }
 
+  function generateCourseTile(href, title, image, desc, tags)
+  {
+    var lowerTags = "";
+    for (let i = 0; i < tags.length; i++) {
+      lowerTags += tags[i].toLowerCase();
+      if (i + 1 < tags.length)
+        lowerTags += ",";
+    }
+
+    var output = "<a href=\"" + href + "\" title=\"" + title + "\" class=\"coursebox-container course theme-color-border-hover theme-no-hover welcome\" data-type=\"-c\" data-tags=\"" + lowerTags + "\">";
+    output += "<div class=\"sj-ribbon-wrapper  hide\"><div class=\"sj-ribbon \"><span class=\"sj-ribbon-text\"></span></div></div>";
+    output += "<div class=\"coursebox-image\"><img src=\"" + image + "\" data-src=\"" + image + "\" alt=\"" + title + "\"></div>";
+    output += "<div class=\"coursebox-text\">"" + title + "</div>";
+    output += "";
+    output += "<div class=\"storefront-price\"><span>FREE</span></div>";
+    output += "<div class=\"course-time coursebox-callout\"><span></span></div>";
+    output += "<div class=\"coursebox-tags\">";
+    for (let i = 0; i < tags.length; i++)
+    {
+      output += "<span class=\"coursebox-tag\" data-tag=\"" + tags[i].toLowerCase() + "\"><span>" + tags[i] + "</span></span>";
+    }
+    output += "</div>";
+    output += "<span class=\"clearfix\"></span>";
+    output += "</a>";
+  }
+
   /* May no longer need this function due to change in support case logging */
   function buildSupportLink(data)
   {
