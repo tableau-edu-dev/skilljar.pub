@@ -82,7 +82,7 @@
     curLang = getLangFromSJLang($.cookie('sj_lp'));
   }
 
-  function generateCourseTile(href, title, image, desc, tags)
+  function generateCourseTile(href, title, image, desc, tags, target="_self")
   {
     var lowerTags = "";
     for (let i = 0; i < tags.length; i++) {
@@ -91,11 +91,11 @@
         lowerTags += ",";
     }
 
-    var output = "<a href=\"" + href + "\" title=\"" + title + "\" class=\"coursebox-container course theme-color-border-hover theme-no-hover welcome\" data-type=\"-c\" data-tags=\"" + lowerTags + "\">";
+    var output = "<a href=\"" + href + "\" target=\"" + target + "\" title=\"" + title + "\" class=\"coursebox-container course theme-color-border-hover theme-no-hover welcome\" data-type=\"-c\" data-tags=\"" + lowerTags + "\">";
     output += "<div class=\"sj-ribbon-wrapper  hide\"><div class=\"sj-ribbon \"><span class=\"sj-ribbon-text\"></span></div></div>";
     output += "<div class=\"coursebox-image\"><img src=\"" + image + "\" data-src=\"" + image + "\" alt=\"" + title + "\"></div>";
     output += "<div class=\"coursebox-text\">" + title + "</div>";
-    output += "";
+    output += "<div class=\"coursebox-text-description\">" + desc "</div>";
     output += "<div class=\"storefront-price\"><span>FREE</span></div>";
     output += "<div class=\"course-time coursebox-callout\"><span></span></div>";
     output += "<div class=\"coursebox-tags\">";
