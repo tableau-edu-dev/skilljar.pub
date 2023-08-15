@@ -95,7 +95,7 @@
     output += "<div class=\"sj-ribbon-wrapper  hide\"><div class=\"sj-ribbon \"><span class=\"sj-ribbon-text\"></span></div></div>";
     output += "<div class=\"coursebox-image\"><img src=\"" + image + "\" data-src=\"" + image + "\" alt=\"" + title + "\"></div>";
     output += "<div class=\"coursebox-text\">" + title + "</div>";
-    output += "<div class=\"coursebox-text-description\">" + desc "</div>";
+    output += "<div class=\"coursebox-text-description\">" + desc + "</div>";
     output += "<div class=\"storefront-price\"><span>FREE</span></div>";
     output += "<div class=\"course-time coursebox-callout\"><span></span></div>";
     output += "<div class=\"coursebox-tags\">";
