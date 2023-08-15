@@ -94,7 +94,7 @@
     var output = "<a href=\"" + href + "\" title=\"" + title + "\" class=\"coursebox-container course theme-color-border-hover theme-no-hover welcome\" data-type=\"-c\" data-tags=\"" + lowerTags + "\">";
     output += "<div class=\"sj-ribbon-wrapper  hide\"><div class=\"sj-ribbon \"><span class=\"sj-ribbon-text\"></span></div></div>";
     output += "<div class=\"coursebox-image\"><img src=\"" + image + "\" data-src=\"" + image + "\" alt=\"" + title + "\"></div>";
-    output += "<div class=\"coursebox-text\">"" + title + "</div>";
+    output += "<div class=\"coursebox-text\">" + title + "</div>";
     output += "";
     output += "<div class=\"storefront-price\"><span>FREE</span></div>";
     output += "<div class=\"course-time coursebox-callout\"><span></span></div>";
