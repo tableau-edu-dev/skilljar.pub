@@ -106,6 +106,8 @@
     output += "</div>";
     output += "<span class=\"clearfix\"></span>";
     output += "</a>";
+
+    return output;
   }
 
   /* May no longer need this function due to change in support case logging */
