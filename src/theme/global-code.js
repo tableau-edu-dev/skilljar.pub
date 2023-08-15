@@ -84,13 +84,11 @@
 
   function generateCourseTile(href, title, image, desc, tags)
   {
-    console.log("generating tile");
     var lowerTags = "";
     for (let i = 0; i < tags.length; i++) {
       lowerTags += tags[i].toLowerCase();
       if (i + 1 < tags.length)
         lowerTags += ",";
-      console.log(lowerTags);
     }
 
     var output = "<a href=\"" + href + "\" title=\"" + title + "\" class=\"coursebox-container course theme-color-border-hover theme-no-hover welcome\" data-type=\"-c\" data-tags=\"" + lowerTags + "\">";
