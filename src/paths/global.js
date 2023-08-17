@@ -1,0 +1,3 @@
+var generatedTiles = {
+    "VA": {"href": "https://trailheadacademy.salesforce.com/tableau-training-pass/core-classes/TVA101-Tableau-Visual-Analytics", "title": "Visual Analytics", "image": "https://cc.sj-cdn.net/instructor/61zfeoz3f0yq-the-tableau-elearning-program/courses/3s0pbv7nbsx0k/promo-image.1571281332.png", "desc": "Create more meaningful visualizations by learning the science of data visualization and visual best practices. You'll become a better analyst, designer, and communicator after taking this optional, but highly recommended, course. Click for more information and to register for this Trailhead Academy instructor-led training.", "tags": ["English", "Creator"]}
+  }
