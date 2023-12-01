@@ -131,6 +131,16 @@
     }
   }
 
+  function printPageStats()
+  {
+    printStat("isSkilljarFirstPageviewSinceNewDomainMembership", isSkilljarFirstPageviewSinceNewDomainMembership);
+  }
+
+  function printStat(stat, value)
+  {
+    console.log(stat + ":'" + value + "'");
+  }
+
   /* START Language Picker */
     //when the user changes the language in the language picker, do this..
     if (!isExplorer)
@@ -154,6 +164,7 @@
   /* END WisePop Loader */
 
   $(document).ready(function() {
+    printPageStats();
     checkRedirects();
     detectLanguage();
     var n =  new Date();
