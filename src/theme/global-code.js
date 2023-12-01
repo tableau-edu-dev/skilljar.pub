@@ -392,7 +392,7 @@
           }
       }
 
-      wisepops('properties', {languageSelect:getDataFromLang(curLang)["wisepopLang"]});
+      //wisepops('properties', {languageSelect:getDataFromLang(curLang)["wisepopLang"]});
     }
     /* END Language Check */
 
