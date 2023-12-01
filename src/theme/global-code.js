@@ -134,6 +134,8 @@
   function printPageStats()
   {
     printStat("isSkilljarFirstPageviewSinceNewDomainMembership", isSkilljarFirstPageviewSinceNewDomainMembership);
+    printStat("Current Picker Value", $('#languagePackSelect option:selected').val());
+    printStat("Skilljar LP", getLangFromSJLang($.cookie('sj_lp')));
   }
 
   function printStat(stat, value)
