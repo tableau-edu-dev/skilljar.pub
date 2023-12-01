@@ -56,9 +56,10 @@
   {
     //grab the language code that the user just selected
     var languageCode = $('#languagePackSelect option:selected').val();
+    printStat("languageCode", languageCode);
     //send that code through the language map above to get the redirect URL
     var redirectURL = getDataFromLang(getLangFromSJLang(languageCode))["path"];
-    console.log(redirectURL);
+    printStat("redirectURL", redirectURL);
     $.cookie('sj_lp', languageCode, {
       path: '/'
     });
@@ -157,13 +158,13 @@
     }
   /* END Language Picker */
 
-  /* START WisePop Loader */
+  /* START WisePop Loader
     var siteKey = "jfAwR29161"; //Creator and Explorer key
     if(isSamples)
       siteKey = "7XkKdLEzqT";
 
     (function(W,i,s,e,P,o,p){W['WisePopsObject']=P;W[P]=W[P]||function(){(W[P].q=W[P].q||[]).push(arguments)},W[P].l=1*new Date();o=i.createElement(s),p=i.getElementsByTagName(s)[0];o.defer=1;o.src=e;p.parentNode.insertBefore(o,p)})(window,document,'script','//loader.wisepops.com/get-loader.js?v=1&site='+siteKey,'wisepops');
-  /* END WisePop Loader */
+  END WisePop Loader */
 
   $(document).ready(function() {
     printPageStats();
