@@ -401,17 +401,21 @@
           else if ($('.sj-page-catalog-root').length) //we are on the root (base) course catalog page
           {
                 var previous = document.referrer.split('/')[2];
+                printStat("Previous Host", previous);
+
                 if(previous != null && previous != 'elearning.tableau.com')
                 {
                   console.log('came from outside tab');
                   var currentPath = location.pathname;
                   var pathLang = getLangFromPath(currentPath);
 
+                  printStat("Path Lang", pathLang);
+
                   if (pathLang != curLang)
                   {
                     console.log("Current path language '" + pathLang + "' does not match Skilljar language pack '" + curLang + "'");
                     $.cookie('sj_lp', getDataFromLang(pathLang));
-                    
+
                   }
 
                   /*var LangMapToSJLang = {
