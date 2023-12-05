@@ -80,9 +80,10 @@
     //send that code through the language map above to get the redirect URL
     var redirectURL = getDataFromLang(getLangFromSJLang(languageCode))["path"];
     printStat("redirectURL", redirectURL);
-    $.cookie('sj_lp', languageCode, {
+    /*$.cookie('sj_lp', languageCode, {
       path: '/'
-    });
+    });*/
+    $.cookie('sj_lp', languageCode);
     return redirectURL;
   }
 
