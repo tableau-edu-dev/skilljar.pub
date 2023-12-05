@@ -400,43 +400,32 @@
           }
           else if ($('.sj-page-catalog-root').length) //we are on the root (base) course catalog page
           {
-                var previous = document.referrer.split('/')[2];
-                printStat("Previous Host", previous);
+            var redirectURL = getPickerPath();
+            if(window.location.href.substring(window.location.href.length - redirectURL.length) != redirectURL)
+            {
+                window.location.replace(redirectURL);
+            }
+          }
+          else
+          {
+            var previous = document.referrer.split('/')[2];
+            printStat("Previous Host", previous);
 
-                if(previous != null && previous != 'elearning.tableau.com')
-                {
-                  console.log('came from outside tab');
-                  var currentPath = location.pathname;
-                  var pathLang = getLangFromPath(currentPath);
+            if(previous != null && previous != 'elearning.tableau.com')
+            {
+              console.log('came from outside tab');
+              var currentPath = location.pathname;
+              var pathLang = getLangFromPath(currentPath);
 
-                  printStat("Path Lang", pathLang);
+              printStat("Path Lang", pathLang);
 
-                  if (pathLang != curLang)
-                  {
-                    console.log("Current path language '" + pathLang + "' does not match Skilljar language pack '" + curLang + "'");
-                    $.cookie('sj_lp', getDataFromLang(pathLang));
+              if (pathLang != curLang)
+              {
+                console.log("Current path language '" + pathLang + "' does not match Skilljar language pack '" + curLang + "'");
+                $.cookie('sj_lp', getDataFromLang(pathLang));
 
-                  }
-
-                  /*var LangMapToSJLang = {
-                    "en-US": {"sj_id": "1bzdyi075jus", "path": "/", "wisepopLang": "en-US"},
-                    "ja-JP": {"sj_id": "3gl30vyogvnmu", "path": "/page/ja", "wisepopLang": "ja"},
-                    "default": {"sj_id": "1bzdyi075jus", "path": "/", "wisepopLang": "en-US"},
-                    "es-ES": {"sj_id": "38ih51ma7efg9", "path": "/page/es", "wisepopLang": "es-MX"},
-                    "zh-CN": {"sj_id": "2o6kwj7e3az2f", "path": "/page/zh", "wisepopLang": "zh-Hans"},
-                    "ko-KR": {"sj_id": "3jpgmwcua6fbf", "path": "/page/ko", "wisepopLang": "en-US"},
-                    "de-DE": {"sj_id": "xjnyp0weakhy", "path": "/page/de", "wisepopLang": "en-US"},
-                    "fr-FR": {"sj_id": "1gxn7bum6r96j", "path": "/page/fr", "wisepopLang": "en-US"}
-                  }*/
-
-
-                }
-
-                var redirectURL = getPickerPath();
-                if(window.location.href.substring(window.location.href.length - redirectURL.length) != redirectURL)
-                {
-                    window.location.replace(redirectURL);
-                }
+              }
+            }
           }
       }
       else
