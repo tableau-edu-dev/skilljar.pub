@@ -83,7 +83,7 @@
     var curSJPack = $.cookie('sj_lp');
     curLang = getLangFromSJLang(curSJPack);
 
-    var currentURL = location.protocol + '//' + location.host + location.pathname;
+    var currentURL = location.pathname;
 
     console.log(currentURL);
 
