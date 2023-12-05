@@ -422,8 +422,9 @@
               if (pathLang != curLang)
               {
                 console.log("Current path language '" + pathLang + "' does not match Skilljar language pack '" + curLang + "'");
-                printStat("Setting Language", getDataFromLang(pathLang)["sj_id"]);
-                $.cookie('sj_lp', getDataFromLang(pathLang)["sj_id"]);
+                var newSJID = getDataFromLang(pathLang)["sj_id"];
+                printStat("Setting Language", newSJID);
+                $.cookie('sj_lp', newSJID);
                 //location.reload();
               }
             }
