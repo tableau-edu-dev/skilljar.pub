@@ -423,7 +423,7 @@
               {
                 console.log("Current path language '" + pathLang + "' does not match Skilljar language pack '" + curLang + "'");
                 $.cookie('sj_lp', getDataFromLang(pathLang));
-
+                location.reload();
               }
             }
           }
