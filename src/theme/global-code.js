@@ -411,7 +411,7 @@
             var previous = document.referrer.split('/')[2];
             printStat("Previous Host", previous);
 
-            if(previous != null && previous != 'elearning.tableau.com')
+            if(previous == undefined || previous != 'elearning.tableau.com')
             {
               console.log('came from outside tab');
               var currentPath = location.pathname;
