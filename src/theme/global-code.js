@@ -83,9 +83,7 @@
     var curSJPack = $.cookie('sj_lp');
     curLang = getLangFromSJLang(curSJPack);
 
-    var currentURL = location.pathname;
-
-    console.log(currentURL);
+    var currentPath = location.pathname;
 
     /*var LangMapToSJLang = {
       "en-US": {"sj_id": "1bzdyi075jus", "path": "/", "wisepopLang": "en-US"},
@@ -382,6 +380,7 @@
           }
           else if ($('.sj-page-catalog-root').length) //we are on the root (base) course catalog page
           {
+                console.log(document.referrer);
                 var redirectURL = getPickerPath();
                 if(window.location.href.substring(window.location.href.length - redirectURL.length) != redirectURL)
                 {
