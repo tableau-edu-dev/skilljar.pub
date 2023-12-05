@@ -380,7 +380,7 @@
           }
           else if ($('.sj-page-catalog-root').length) //we are on the root (base) course catalog page
           {
-                console.log(document.referrer.host);
+                console.log(document.referrer.split('/')[2]);
                 var redirectURL = getPickerPath();
                 if(window.location.href.substring(window.location.href.length - redirectURL.length) != redirectURL)
                 {
