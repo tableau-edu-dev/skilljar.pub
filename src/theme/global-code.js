@@ -80,7 +80,23 @@
 
   function detectLanguage()
   {
-    curLang = getLangFromSJLang($.cookie('sj_lp'));
+    var curSJPack = $.cookie('sj_lp');
+    curLang = getLangFromSJLang(curSJPack);
+
+    var currentURL = location.protocol + '//' + location.host + location.pathname;
+
+    console.log(currentURL);
+
+    /*var LangMapToSJLang = {
+      "en-US": {"sj_id": "1bzdyi075jus", "path": "/", "wisepopLang": "en-US"},
+      "ja-JP": {"sj_id": "3gl30vyogvnmu", "path": "/page/ja", "wisepopLang": "ja"},
+      "default": {"sj_id": "1bzdyi075jus", "path": "/", "wisepopLang": "en-US"},
+      "es-ES": {"sj_id": "38ih51ma7efg9", "path": "/page/es", "wisepopLang": "es-MX"},
+      "zh-CN": {"sj_id": "2o6kwj7e3az2f", "path": "/page/zh", "wisepopLang": "zh-Hans"},
+      "ko-KR": {"sj_id": "3jpgmwcua6fbf", "path": "/page/ko", "wisepopLang": "en-US"},
+      "de-DE": {"sj_id": "xjnyp0weakhy", "path": "/page/de", "wisepopLang": "en-US"},
+      "fr-FR": {"sj_id": "1gxn7bum6r96j", "path": "/page/fr", "wisepopLang": "en-US"}
+    }*/
   }
 
   function generateCourseTile(href, title, image, desc, tags, target="_self")
