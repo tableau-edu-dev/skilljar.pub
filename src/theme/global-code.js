@@ -425,7 +425,7 @@
                 var newSJID = getDataFromLang(pathLang)["sj_id"];
                 printStat("Setting Language", newSJID);
                 $.cookie('sj_lp', newSJID);
-                //location.reload();
+                location.reload();
               }
             }
           }
