@@ -467,14 +467,14 @@
           "fr-FR": {"label": "Conditions générales Tableau", "path": "https://www.tableau.com/eula"}
         },
         "FAQ" : {
-          "default": {"label": "FAQ", "path": "https://community.tableau.com/s/elearning"},
-          "en-US": {"label": "FAQ", "path": "https://community.tableau.com/s/elearning"},
-          "ja-JP": {"label": "FAQ", "path": "https://community.tableau.com/s/elearning"},
-          "es-ES": {"label": "Preguntas frecuentes", "path": "https://community.tableau.com/s/elearning"},
-          "zh-CN": {"label": "FAQ", "path": "https://community.tableau.com/s/elearning"},
-          "ko-KR": {"label": "FAQ", "path": "https://community.tableau.com/s/elearning"},
-          "de-DE": {"label": "Häufig gestellte Fragen", "path": "https://community.tableau.com/s/elearning"},
-          "fr-FR": {"label": "FAQ", "path": "https://community.tableau.com/s/elearning"}
+          "default": {"label": "FAQ", "path": "https://trailhead.salesforce.com/en/help?article=Tableau-eLearning-User-FAQs"},
+          "en-US": {"label": "FAQ", "path": "https://trailhead.salesforce.com/en/help?article=Tableau-eLearning-User-FAQs"},
+          "ja-JP": {"label": "FAQ", "path": "https://trailhead.salesforce.com/en/help?article=Tableau-eLearning-User-FAQs"},
+          "es-ES": {"label": "Preguntas frecuentes", "path": "https://trailhead.salesforce.com/en/help?article=Tableau-eLearning-User-FAQs"},
+          "zh-CN": {"label": "FAQ", "path": "https://trailhead.salesforce.com/en/help?article=Tableau-eLearning-User-FAQs"},
+          "ko-KR": {"label": "FAQ", "path": "https://trailhead.salesforce.com/en/help?article=Tableau-eLearning-User-FAQs"},
+          "de-DE": {"label": "Häufig gestellte Fragen", "path": "https://trailhead.salesforce.com/en/help?article=Tableau-eLearning-User-FAQs"},
+          "fr-FR": {"label": "FAQ", "path": "https://trailhead.salesforce.com/en/help?article=Tableau-eLearning-User-FAQs"}
         },
         "Forums" : {
           "default": {"label": "Tableau Community Forums", "path": "https://community.tableau.com/"},
